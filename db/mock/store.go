@@ -124,34 +124,34 @@ func (mr *MockStoreMockRecorder) DeleteAccount(arg0, arg1 interface{}) *gomock.C
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "DeleteAccount", reflect.TypeOf((*MockStore)(nil).DeleteAccount), arg0, arg1)
 }
 
-// GetAcount mocks base method.
-func (m *MockStore) GetAcount(arg0 context.Context, arg1 int64) (db.Account, error) {
+// GetAccount mocks base method.
+func (m *MockStore) GetAccount(arg0 context.Context, arg1 int64) (db.Account, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetAcount", arg0, arg1)
+	ret := m.ctrl.Call(m, "GetAccount", arg0, arg1)
 	ret0, _ := ret[0].(db.Account)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// GetAcount indicates an expected call of GetAcount.
-func (mr *MockStoreMockRecorder) GetAcount(arg0, arg1 interface{}) *gomock.Call {
+// GetAccount indicates an expected call of GetAccount.
+func (mr *MockStoreMockRecorder) GetAccount(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAcount", reflect.TypeOf((*MockStore)(nil).GetAcount), arg0, arg1)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccount", reflect.TypeOf((*MockStore)(nil).GetAccount), arg0, arg1)
 }
 
-// GetAcountForUpdate mocks base method.
-func (m *MockStore) GetAcountForUpdate(arg0 context.Context, arg1 int64) (db.Account, error) {
+// GetAccountForUpdate mocks base method.
+func (m *MockStore) GetAccountForUpdate(arg0 context.Context, arg1 int64) (db.Account, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetAcountForUpdate", arg0, arg1)
+	ret := m.ctrl.Call(m, "GetAccountForUpdate", arg0, arg1)
 	ret0, _ := ret[0].(db.Account)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
-// GetAcountForUpdate indicates an expected call of GetAcountForUpdate.
-func (mr *MockStoreMockRecorder) GetAcountForUpdate(arg0, arg1 interface{}) *gomock.Call {
+// GetAccountForUpdate indicates an expected call of GetAccountForUpdate.
+func (mr *MockStoreMockRecorder) GetAccountForUpdate(arg0, arg1 interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAcountForUpdate", reflect.TypeOf((*MockStore)(nil).GetAcountForUpdate), arg0, arg1)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetAccountForUpdate", reflect.TypeOf((*MockStore)(nil).GetAccountForUpdate), arg0, arg1)
 }
 
 // GetEntry mocks base method.
